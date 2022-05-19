@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Formulários em HTML</title>
+</head>
+
+<body>
+<main>
+	<form action="cadastraCliente.php" method="post" enctype="multipart/form-data">
+	<br>	
+	<fieldset>
+		<legend>Dados Pessoais</legend>
+	
+		<div>
+			<label for="nome">Nome:</label>
+			<input type="text" pattern=".{2,50}" id="nome" name="nome" required
+				placeholder="Informe o usuario" autofocus>
+			<input type="hidden" name="hiddenfield" value="dadospessoais">
+		</div>
+		<br>
+		<div>
+			<label for="email">E-mail:</label>
+			<input type="email" id="email" name="email" required>
+		</div>
+		<br>
+		<div>
+			<label for="cpf">CPF:</label>
+			<input type="text" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" id="cpf" name="cpf" required>
+		</div>
+		<br>
+		<div>
+			<label for="idade">Idade:</label>
+			<input type="number" id="idade" name="idade" required>
+		</div>
+		<br>
+		<div>
+			<label for="fone">Telefone:</label>
+			<input type="tel" id="fone" name="fone" required>
+		</div>
+		<br>
+		<div>
+			<label for="datanasc">Data de nascimento:</label>
+			<input type="date" id="datanasc" name="datanasc">
+		</div>
+		<br>
+		<div>
+		<label for="solteiro">Estado Civil:</label>
+		<br>
+		<input type="radio" id="solteiro" name="estadocivil" value="solteiro" checked>
+		<label for="solteiro">Solteiro</label>
+		</div>
+		<div>
+		<input type="radio" id="casado" name="estadocivil" value="casado">
+		<label for="casado">Casado</label>
+		</div>
+		<div>
+		<input type="radio" id="divorciado" name="estadocivil" value="divorciado">
+		<label for="divorciado">Divorciado</label>
+		</div><br>
+		<div>
+			<label for="nacionalidade">Nacionalidade:</label>
+			<input type="text" id="nacionalidade" name="nacionalidade" value="Brasileira" readonly>
+		</div>
+		<br>
+		</fieldset>
+		
+		<br>
+		<fieldset>
+		<legend>Endereço de Entrega</legend>
+		<div>
+			<label for="cep">CEP:</label>
+			<input type="text" id="cep" name="cep" required>
+		</div>
+		<br>
+		<div>
+		<label for="Tlogradouro">Tipo de logradouro:</label>
+		<select id="Tlogradouro" name="Tlogradouro">
+			<option value="rua">Rua</option>
+			<option value="avenida">Avenida</option>
+			<option value="praça">Praça</option>
+			<option value="etc">Outro</option>
+		</select>
+		</div>
+		<br>
+		<div>
+		<label for="logradouro">Logradouro:</label>
+		<input type="text" id="logradouro" name="lagradouro">
+		</div>
+		<br>
+		<div>
+		<label for="bairro">Bairro:</label>
+		<input type="text" id="bairro" name="bairro">
+		</div>
+		<br>
+		<div>
+		<label for="cidade">Cidade:</label>
+		<input type="text" id="cidade" name="cidade">
+		</div>
+		<br>
+		<div>
+		<label for="estado">Estado:</label>
+		<select id="estado" name="estado">
+			<option value="MG">Minas Gerais</option>
+			<option value="CE">Ceará</option>
+			<option value="AM">Amazonas</option>
+			<option value="SC">Santa Catarina</option>
+			<option value="outro">Outro</option>
+		</select>
+		</div>
+		</fieldset>
+		<br>
+		
+		<fieldset>
+		<legend>Informações Adicionais</legend>
+		
+		<div>
+		<h4>Filmes de Interesse:</h4>
+		<input type="checkbox" id="f1" name="filmes" value="f1">
+		<label for="f1">Corações de Ferro</label><br>
+		<input type="checkbox" id="f2" name="filmes" value="f2">
+		<label for="f2">Transformers - O Lado Oculto da Lua</label><br>
+		<input type="checkbox" id="f3" name="filmes" value="f3">
+		<label for="f3">Kung Fu Panda</label><br>
+		<input type="checkbox" id="f4" name="filmes" value="f4">
+		<label for="f4">Dragon Ball Super: Broly</label><br>
+		</div>
+		<br>
+		
+		<div>
+		<h4>Livros de Interesse:</h4>
+		<input type="checkbox" id="b1" name="livros" value="b1">
+		<label for="b1">Eu, Robô - Isaac Asimov</label><br>
+		<input type="checkbox" id="b2" name="livros" value="b2">
+		<label for="b2">Liderar com o coração - Mike Krzyzewski</label><br>
+		<input type="checkbox" id="b3" name="livros" value="b3">
+		<label for="b3">Infinity Drake - John Mcnally</label><br>
+		<input type="checkbox" id="b4" name="livros" value="b4">
+		<label for="b4">Robinson Crusoé - Daniel Defoe -</label><br>
+		</div>
+		<br>
+		
+		<div>
+		<h4>Jogos de interesse:</h4>
+		<input type="checkbox" id="g1" name="games" value="g1">
+		<label for="g1">Brawl Stars</label><br>
+		<input type="checkbox" id="g2" name="games" value="g2">
+		<label for="g2">Ori and the Blind Forest</label><br>
+		<input type="checkbox" id="g3" name="games" value="g3">
+		<label for="g3">Assassin's Credd Origins</label><br>
+		<input type="checkbox" id="g4" name="games" value="g4">
+		<label for="g4">Tomb Raider</label><br>
+		</div>
+		<br>
+		
+		<div>
+		<h4>Roupas que costuma usar no cotidiano:</h4>
+		<input type="checkbox" id="r1" name="roupas" value="r1">
+		<label for="r1">Bermuda</label><br>
+		<input type="checkbox" id="r2" name="roupas" value="r2">
+		<label for="r2">Moletom</label><br>
+		<input type="checkbox" id="r3" name="roupas" value="r3">
+		<label for="r3">Colar</label><br>
+		<input type="checkbox" id="r4" name="roupas" value="r4">
+		<label for="r4">Chinelo</label><br>
+		<input type="checkbox" id="r5" name="roupas" value="r5">
+		<label for="r5">Boné</label><br>
+		</div>
+		<br>
+		
+		<div>
+		<h4>Esportes praticados:</h4>
+		<input type="checkbox" id="e1" name="roupas" value="e1">
+		<label for="e1">Vôlei</label><br>
+		<input type="checkbox" id="e2" name="roupas" value="e2">
+		<label for="e2">Basquetebol</label><br>
+		<input type="checkbox" id="e3" name="roupas" value="e3">
+		<label for="e3">Futsal</label><br>
+		<input type="checkbox" id="e4" name="roupas" value="e4">
+		<label for="e4">Ciclismo</label><br>
+		<input type="checkbox" id="e5" name="roupas" value="e5">
+		<label for="e5">Tênis de Mesa</label><br>
+		</div>
+		<br>
+		
+		<div>
+		<h4>Informações Complementares:</h4>
+		<textarea name="comentário" rows="5" cols="50">
+		</textarea>
+		</div>
+		<br>
+		
+		<div>
+		<label for="arquivo">Anexar arquivo:</label><br>
+		<input type="file" id="arquivo" name="arquivo" accept=".jpg, .jpeg, .png">
+		</div>
+		
+		</fieldset>
+		
+		
+		<button>Enviar:</button>
+		
+		<input type="reset" value="Limpar">
+		
+	</form>	
+</main>
+</body>
+</html>

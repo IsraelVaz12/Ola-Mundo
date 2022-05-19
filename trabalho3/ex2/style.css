@@ -1,0 +1,53 @@
+body{
+    background-color: #ddd;
+    font-family: Helvetica Neue;
+    line-height: 1.5;
+    text-align: left;
+    width: 60%;
+    padding: 10px 10px 10px 10px;
+}
+
+header, footer, nav{
+    background-color: #555;
+    color: #eee;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+
+}
+
+nav ul{
+
+}
+
+nav ul li{
+    color: #ddd;
+}
+
+nav a {
+
+}
+
+nav a:link, nav a:visited{
+
+}
+
+nav a:hover{
+
+}
+
+main{
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+h2{
+    color: #555;
+}
+
+.galery img{
+
+}
