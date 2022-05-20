@@ -1,8 +1,9 @@
 body{
     background-color: #ddd;
-    font-family: Helvetica Neue;
+    font-family: "Helvetica Neue", sans-serif;
     line-height: 1.5;
     text-align: left;
+    margin: 0 auto;
     width: 60%;
     padding: 10px 10px 10px 10px;
 }
@@ -11,30 +12,33 @@ header, footer, nav{
     background-color: #555;
     color: #eee;
     border-radius: 10px;
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
     padding: 10px 10px 10px 10px;
     text-align: center;
-
 }
 
 nav ul{
+   padding: 20px, 20px;
+  display: inline;
 
 }
 
 nav ul li{
+    display: inline;
     color: #ddd;
 }
 
 nav a {
-
+   padding: 20px, 20px;
 }
 
 nav a:link, nav a:visited{
-
+  text-decoration: none;
+   color: #ddd;
 }
 
 nav a:hover{
-
+  color: #fff;
 }
 
 main{
@@ -49,5 +53,6 @@ h2{
 }
 
 .galery img{
-
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 10px;
 }
