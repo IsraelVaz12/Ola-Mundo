@@ -8,6 +8,12 @@ body{
     padding: 10px 10px 10px 10px;
 }
 
+@media all and (max-width: 600px){
+  body{
+    width: 95%;
+  }
+}
+
 header, footer, nav{
     background-color: #555;
     color: #eee;
@@ -18,18 +24,17 @@ header, footer, nav{
 }
 
 nav ul{
-   padding: 20px, 20px;
-  display: inline;
-
+    display: inline;
 }
 
 nav ul li{
+    padding: 50px, 20px;
     display: inline;
     color: #ddd;
 }
 
 nav a {
-   padding: 20px, 20px;
+   padding: 50px, 20px;
 }
 
 nav a:link, nav a:visited{
